@@ -11,13 +11,14 @@ The data set is linear, it is a series of quantitative variables. The goal is to
 
 # Project
 
-![alt text]https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG)
+<img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG" alt="drawing" width="400"/>
 
 In this menu you can select an article, a week, and download the prediction for one or all articles, one or all weeks, or for one article and one week.
 
 # Prediction per article
 
-![alt text]https://github.com/Ainara2828/Sales-Prediction/tree/main/images/article.PNG)
+
+<img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/article.PNG" alt="drawing" width="400"/>
 
 After selecting one article, the tool gives you all the predictions of the article selected for the following weeks. The interface also displays the item's p-value (its precision threshold) and its prediction error.
 
@@ -41,19 +42,22 @@ The user can also download the predictions for one article into an excel file by
 
 The user can also choose the predictions of all articles based on a specific week. To do this, he must select the number of the week from the drop-down list. The user can then save the results in an excel file named “predictionPerWeek” by clicking on the “Enter Week” button as below.
 
-![alt text]https://github.com/Ainara2828/Sales-Prediction/tree/main/images/week.PNG)
+
+<img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/week.PNG" alt="drawing" width="400"/>
 
 # Prediction per article and week
 
 If the user selects an article and a week from the respective menus, then the user can display the prediction for the selected article and week on the screen by clicking on the “Enter Week and article” button as below.
 
 
-![alt text]https://github.com/Ainara2828/Sales-Prediction/tree/main/images/weekAndArticle.PNG)
+
+<img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/weekAndArticle.PNG" alt="drawing" width="400"/>
 
 # All predictions
 
 The user also has the "Download data" button which saves all of the predictions in an excel file called "predictions" thus guaranteeing the user full access and use of the forecasts.
 
-![alt text]https://github.com/Ainara2828/Sales-Prediction/tree/main/images/download.PNG)
+
+<img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/download.PNG" alt="drawing" width="400"/>
 
 
