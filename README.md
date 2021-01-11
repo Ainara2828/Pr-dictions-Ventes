@@ -11,6 +11,8 @@ The data set is linear, it is a series of quantitative variables. The goal is to
 
 # Project
 
+![alt text](https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG)
+
 <img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG" alt="drawing" width="400"/>
 
 In this menu you can select an article, a week, and download the prediction for one or all articles, one or all weeks, or for one article and one week.
