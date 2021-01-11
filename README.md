@@ -11,7 +11,7 @@ The data set is linear, it is a series of quantitative variables. The goal is to
 
 # Project
 
-![alt text](https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG)
+![alt text](https://github.com/Ainara2828/Sales-Prediction/blob/main/images/menu.PNG?raw=true)
 
 <img src="https://github.com/Ainara2828/Sales-Prediction/tree/main/images/menu.PNG" alt="drawing" width="400"/>
 
