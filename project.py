@@ -9,11 +9,11 @@ from functools import partial
 
 #93 articles et 35 semaines
 
-Var = pd.read_csv("data/VarianceData.csv") #/data/Documents/Cours EISTI/ING2/Semestre 1/ProjetRegLin/
+Var = pd.read_csv("data/VarianceData.csv")
 Moy = pd.read_csv("data/MeanData.csv")
 EcTy = pd.read_csv("data/StdDeviationData.csv")
 
-########################## DETERMINATION PREDICTION, ERREURS ET MODELE OPTMIAL ####################################
+########################## DETERMINATION PREDICTION, ERRORS AND OPTIMAL MODEL ####################################
 
 def predict(x,reg):
    return reg[0] * x + reg[1]
@@ -76,7 +76,7 @@ ErreurVariance = "Regression error explained by the variance :" + str(errorCalcu
 ErreurEcTy = "Regression error explained by the standard deviation :" + str(errorCalculation(errEcTy))
 ErreurMoyenne = "Regression error explained by the mean :" + str(errorCalculation(errMoy))
 
-############## GENERER LE GRAPHIQUE ##############################
+############## GENERATE THE GRAPHIC ##############################
 
 def generateGraphic(indice):
 	X = Var.iloc[0:len(Var)-2,indice+1]
@@ -88,7 +88,7 @@ def generateGraphic(indice):
 	plt.plot(x_test, regr.predict(x_test[:,np.newaxis]), color='blue', linewidth=3)
 	plt.show()
 
-############################################ CHOIX UTILISATEUR ################################################## 
+############################################ USER CHOICE ################################################## 
 
 listeArticles = [89005907,89007507,89010978,89011016,89011048,89011119,89011129,89011448,89011642,89011704,89011745,89011747,89012333,89012486,89012516,89074636,89075417,89075967,89077501,89078230,89079659,89090152,89094273,89095030,89504648,89011098,89057825,90005288,90005942,90007068,90010141,90011903,90012743,90013323,90015258,90017500,90020568,90022088,92000110,92000299,92000362,92000381,92000386,92000694,92000741,92000797,92000812,92000813,92000834,92000882,92000951,92000952,92000963,92000965,92000983,
 92001063,92001184,92001201,92001232,92001236,92001324,92001341,92001450,92001463,92001468,92001473,92001575,92001726,92001830,92001889,92001944,92001946,92002033,92002072,92002113,92002114,92002117,92002141,92002267,92002347,92002506,92002630,92002636,92002798,92002907,92002916,92002990,92003013,92003033,92003061,92003062,92003112,92003123,92003132,92003161,92003175]
@@ -108,11 +108,11 @@ labelIntro.grid(row=3,column=0)
 
 
 
-#PREDICTIONS PAR ARTICLES
+#PREDICTIONS PER ARTICLES
 
-#affichage prediction sur les 35 semaines, la p value et l'erreur de l'article
+#display prediction on the 35 weeks, the p value and the error of the article
 
-# création listbox articles
+# creation articles listbox
 lbx = Listbox(w,exportselection=0)
 for i in range(0,len(listeArticles)-1):
 	lbx.insert(i, listeArticles[i])
@@ -143,7 +143,7 @@ bt.grid(row=5, column=0)
 def downloadArticle():
 	articleListe = []
 	indice = lbx.curselection()[0]
-	book = Workbook() #enregistrement aussi dans un fichier excel
+	book = Workbook() #saved in an excel file
 	feuil1 = book.add_sheet('sheet 1')
 	articleListe = pd.Series.tolist(resVar[int(indice)])
 	for i in range(0,len(articleListe)-1):
@@ -153,7 +153,7 @@ def downloadArticle():
 bt5 = Button(w, text="Download", command=downloadArticle)
 bt5.grid(row=6, column=0)
 
-#PREDICTIONS PAR SEMAINES 
+#PREDICTIONS PER WEEKS
 
 llPredic = []
 
@@ -179,7 +179,7 @@ def displayPrevisionWeek():
     labelResSem = Label(w, text="your predictions for this week are saved in your documents in an excel file")
     labelResSem.grid(row=6,column=2)
 
-    book = Workbook() #enregistrement aussi dans un fichier excel
+    book = Workbook() #saved in an excel file
     feuil1 = book.add_sheet('sheet 1')
     for i in range(0,len(predicSemaine)-1):
     	feuil1.write(i,0,predicSemaine[i])
@@ -190,7 +190,7 @@ bt2.grid(row=5, column=2)
 
 
 
-#PREDICTIONS PAR SEMAINES PAR ARTICLES
+#PREDICTIONS PER WEEK PER ARTICLE
 
 def predictionWeekArticle():
 	semainesVar = []
@@ -204,9 +204,9 @@ bt3 = Button(w, text="Enter week and article", command=predictionWeekArticle)
 bt3.grid(row=5, column=3)
 
 
-##################CREATION DU FICHIER EXCEL #########################################
+##################CREATION OF THE EXCEL FILE #########################################
 
-#if clic sur le bouton download : 
+#if clic on download button : 
 
 def downloadData():
 	book = Workbook()
