@@ -17,7 +17,7 @@ In this menu you can select an article, a week, and download the prediction for 
 
 # Prediction per article
 
-![alt text](https://github.com/Ainara2828/Sales-Prediction/blob/main/images/article.PNG?raw=true)
+![alt text](https://github.com/Ainara2828/Sales-Prediction/blob/main/images/arcticle.PNG?raw=true)
 
 After selecting one article, the tool gives you all the predictions of the article selected for the following weeks. The interface also displays the item's p-value (its precision threshold) and its prediction error.
 
