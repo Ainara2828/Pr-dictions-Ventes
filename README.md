@@ -55,6 +55,6 @@ If the user selects an article and a week from the respective menus, then the us
 The user also has the "Download data" button which saves all of the predictions in an excel file called "predictions" thus guaranteeing the user full access and use of the forecasts.
 
 
-![alt text](https://github.com/Ainara2828/Sales-Prediction/blob/main/images/download.PNG?raw=true)>
+![alt text](https://github.com/Ainara2828/Sales-Prediction/blob/main/images/download.PNG?raw=true)
 
 
